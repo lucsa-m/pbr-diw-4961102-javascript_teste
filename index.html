@@ -6,7 +6,8 @@
     <title>Javascript - Testes</title>
     <link rel="icon" href="assets/img/logo_pucminas.png" type="image/png">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <script src="assets/js/bootstrap.bundle.min.js" ></script>    
+    <script src="assets/js/bootstrap.bundle.min.js" ></script>  
+
 </head>
 <body>
     <div class="container">
@@ -48,15 +49,15 @@
             <div class="row">
                 <div class="col-3">
                   <label for="nome_usuario" class="form-label">Nome:</label> 
-                  <input type="text" class="form-control" placeholder="informe seu nome">
+                  <input type="text" class="form-control" placeholder="informe seu nome" id="nome_usuario">
                 </div>
                 <div class="col-2">
                     <br/>
-                    <button type="button" class="btn btn-primary">Cumprimentar</button>
+                    <button type="button" class="btn btn-primary" id="btnExe1">Cumprimentar</button>
                 </div>
                 <div class="col-5">
                     <br/>
-                    <span> Resultado da Questão 1</span>
+                    <span id="res1"> Resultado da Questão 1</span>
                 </div>
             </div>
         </div>
@@ -67,11 +68,11 @@
             <div class="row">
                 <div class="col-2">
                   <label for="valor_a" class="form-label">Valor A:</label> 
-                  <input type="text" class="form-control" placeholder="informe o primeiro valor">
+                  <input type="text" class="form-control" placeholder="informe o primeiro valor"id="q2val1">
                 </div>
                 <div class="col-2">
                     <label for="operacao" class="form-label">Operação:</label> 
-                    <select class="form-control">
+                    <select class="form-control" id="operacao">
                         <option value="+">Soma</option>
                         <option value="/">Divisão</option>
                         <option value="-">Subtração</option>
@@ -80,15 +81,15 @@
                 </div>
                 <div class="col-2">
                     <label for="valor_b" class="form-label">Valor B:</label> 
-                    <input type="text" class="form-control" placeholder="informe o segundo valor">
+                    <input type="text" class="form-control" placeholder="informe o segundo valor"id ="q2val2">
                   </div>
                  <div class="col-1">
                     <br/>
-                    <button type="button" class="btn btn-primary">Calcular</button>
+                    <button type="button" class="btn btn-primary" id="btnExe2">Calcular</button>
                   </div>
                 <div class="col-3">
                     <br/>
-                    <span> Resultado da Questão 2</span>
+                    <span id="res2"> Resultado da Questão 2</span>
                 </div>
             </div>
         </div>
@@ -261,4 +262,5 @@
 
 
 </body>
+<script src="assets/js/main.js"></script>    
 </html>
